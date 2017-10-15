@@ -19,4 +19,8 @@ function divide(number1, number2) {
 $('form#add').submit(function(event) {
   event.preventDefault();
   alert('form submitted');
+  let number1 = parseFloat($('input#number1').val());
+  let number2 = parseFloat($('input#number2').val());
+  let result = add(number1, number2);
+  $('h1#output').text(result);
 });
