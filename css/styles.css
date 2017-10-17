@@ -6,3 +6,19 @@ body {
   line-height: 1.65;
   margin: 0;
 }
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-bottom: 10px;
+}
+
+form:last-of-type {
+  margin-bottom: 0;
+}
+
+p.output {
+  font-size: 3em;
+}
