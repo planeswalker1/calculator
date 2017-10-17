@@ -23,3 +23,8 @@ $('form#add').submit(function(event) {
   let result = add(addInput1, addInput2);
   $('p#addOutput').text(result);
 });
+
+$('form#subtract').submit(function(event) {
+  event.preventDefault();
+  alert('Subtract form submitted');
+});
