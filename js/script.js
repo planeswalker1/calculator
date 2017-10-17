@@ -31,3 +31,8 @@ $('form#subtract').submit(function(event) {
   let result = subtract(subtractInput1, subtractInput2);
   $('p#subtractOutput').text(result);
 });
+
+$('form#multiply').submit(function(event) {
+  event.preventDefault();
+  alert('multiply form submitted');
+});
