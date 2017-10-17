@@ -18,9 +18,8 @@ function divide(number1, number2) {
 //Everything below this line is user interface (or front-end) logic:
 $('form#add').submit(function(event) {
   event.preventDefault();
-  alert('form submitted');
-  let number1 = parseFloat($('input#number1').val());
-  let number2 = parseFloat($('input#number2').val());
-  let result = add(number1, number2);
-  $('h1#output').text(result);
+  let addInput1 = parseFloat($('input#add1').val());
+  let addInput2 = parseFloat($('input#add2').val());
+  let result = add(addInput1, addInput2);
+  $('p#addOutput').text(result);
 });
