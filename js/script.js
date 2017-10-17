@@ -34,5 +34,8 @@ $('form#subtract').submit(function(event) {
 
 $('form#multiply').submit(function(event) {
   event.preventDefault();
-  alert('multiply form submitted');
+  let multiplyInput1 = parseFloat($('input#multiply1').val());
+  let multiplyInput2 = parseFloat($('input#multiply2').val());
+  let result = multiply(multiplyInput1, multiplyInput2);
+  $('p#multiplyOutput').text(result);
 });
