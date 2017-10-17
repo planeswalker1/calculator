@@ -26,5 +26,8 @@ $('form#add').submit(function(event) {
 
 $('form#subtract').submit(function(event) {
   event.preventDefault();
-  alert('Subtract form submitted');
+  let subtractInput1 = parseFloat($('input#subtract1').val());
+  let subtractInput2 = parseFloat($('input#subtract2').val());
+  let result = subtract(subtractInput1, subtractInput2);
+  $('p#subtractOutput').text(result);
 });
