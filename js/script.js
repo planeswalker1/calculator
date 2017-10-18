@@ -42,5 +42,8 @@ $('form#multiply').submit(function(event) {
 
 $('form#divide').submit(function(event) {
   event.preventDefault();
-  alert('Divide form submitted');
+  let divideInput1 = parseFloat($('input#divide1').val());
+  let divideInput2 = parseFloat($('input#divide2').val());
+  let result = divide(divideInput1, divideInput2);
+  $('p#divideOutput').text(result);
 });
