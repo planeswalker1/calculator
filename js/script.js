@@ -39,3 +39,8 @@ $('form#multiply').submit(function(event) {
   let result = multiply(multiplyInput1, multiplyInput2);
   $('p#multiplyOutput').text(result);
 });
+
+$('form#divide').submit(function(event) {
+  event.preventDefault();
+  alert('Divide form submitted');
+});
