@@ -22,3 +22,19 @@ form:last-of-type {
 p.output {
   font-size: 3em;
 }
+
+p#addOutput {
+  color: blue;
+}
+
+p#subtractOutput {
+  color: red;
+}
+
+p#multiplyOutput {
+  color: yellow;
+}
+
+p#divideOutput {
+  color: green;
+}
