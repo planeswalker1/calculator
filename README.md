@@ -1,6 +1,6 @@
 # _calculator_
 
-#### _A calculator web app, 10.17.2017_
+#### _A calculator web app, 10.26.2017_
 
 #### By _**planeswalker1**_
 
@@ -16,7 +16,7 @@ _This page has been created to mimic a calculator._
 
 ## Known Bugs
 
-_I don't think there are any bugs_
+_Calculator does not work, work in progress._
 
 ## Support and contact details
 
