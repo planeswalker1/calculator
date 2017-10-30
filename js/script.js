@@ -22,5 +22,7 @@ $('form#calculator').submit(function (event) {
   let number1 = parseFloat($('input#input1').val());
   let number2 = parseFloat($('input#input2').val());
   let operator = $('input:radio[name=operator]:checked').val();
-  console.log('1st number: ' + number1, '|2nd number: ' + number2, '|operator: ' + operator);
+  let result = add(number1, number2);
+  console.log('1st number: ' + number1, '|2nd number: ' + number2, '|operator: ' + operator, '|result: ' + result);
+  $('p#output').text(result);
 });
