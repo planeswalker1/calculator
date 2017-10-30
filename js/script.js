@@ -19,8 +19,8 @@ function divide(number1, number2) {
 
 $('form#calculator').submit(function (event) {
   event.preventDefault();
-  let number1 = $('input#input1').val();
-  let number2 = $('input#input2').val();
+  let number1 = parseFloat($('input#input1').val());
+  let number2 = parseFloat($('input#input2').val());
   let operator = $('input:radio[name=operator]:checked').val();
-  console.log(number1, number2, operator);
+  console.log('1st number: ' + number1, '|2nd number: ' + number2, '|operator: ' + operator);
 });
