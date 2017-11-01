@@ -22,7 +22,18 @@ $('form#calculator').submit(function (event) {
   let number1 = parseFloat($('input#input1').val());
   let number2 = parseFloat($('input#input2').val());
   let operator = $('input:radio[name=operator]:checked').val();
-  let result = add(number1, number2);
+  let result;
+  
+  if (operator === 'add') {
+    result = add(number1, number2);
+  } else if (operator === 'subtract') {
+    result = subtract(number1, number2);
+  } else if (operator === 'multiply') {
+    result = multiply(number1, number2);
+  } else if (operator === 'divide') {
+    result = divide(number1, number2);
+  }
+
   console.log('1st number: ' + number1, '|2nd number: ' + number2, '|operator: ' + operator, '|result: ' + result);
   $('p#output').text(result);
 });
